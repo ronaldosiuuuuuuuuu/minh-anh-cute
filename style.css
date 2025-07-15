@@ -1,0 +1,85 @@
+body {
+  font-family: "Baloo 2", cursive;
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.question {
+  font-size: 24px;
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+.question-prompt {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.gif {
+  width: 250px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.btn-group {
+  position: relative;
+  height: 60px; /* Giúp tránh nút No bị che */
+}
+
+.yes-btn,
+.no-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.yes-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.no-btn {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+}
+.heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 24px;
+  animation: floatUp ease-in;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}
